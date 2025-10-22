@@ -30,6 +30,9 @@
 		],
 		"recipesReady": [
 			"teamport.projectiles.core.recipe.EPRecipes"
+		],
+		"initModels": [
+			"teamport.projectiles.ElementalProjectilesClient"
 		]
 	},
   "mixins": [

@@ -1,6 +1,5 @@
 package teamport.projectiles.core.item;
 
-import net.minecraft.client.render.item.model.ItemModelBow;
 import net.minecraft.core.item.Item;
 import teamport.projectiles.EPConfig;
 import turniplabs.halplibe.helper.ItemBuilder;
@@ -26,28 +25,21 @@ public class EPItems {
 
 	static {
 		AMMO_ARROW_EGG = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/arrow/egg")
 			.build(new Item("ammo.arrow.egg", name("ammo_arrow_egg"), nextID()));
 
 		AMMO_ARROW_EXPLOSIVE = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/arrow/explosive")
 			.build(new Item("ammo.arrow.explosive", name("ammo_arrow_explosive"), nextID()));
 
 		AMMO_ARROW_FIRE = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/arrow/fire")
 			.build(new Item("ammo.arrow.fire", name("ammo_arrow_fire"), nextID()));
 
 		AMMO_ARROW_ICE = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/arrow/ice")
 			.build(new Item("ammo.arrow.ice", name("ammo_arrow_ice"), nextID()));
 
 		AMMO_ARROW_LIGHTNING = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/arrow/lightning")
 			.build(new Item("ammo.arrow.lightning", name("ammo_arrow_lightning"), nextID()));
 
 		TOOL_BOW_HOMING = new ItemBuilder(MOD_ID)
-			.setIcon("projectiles:item/homing_bow")
-			.setItemModel(i -> new ItemModelBow(i, "tool.bow.homing"))
 			.build(new ItemBowHoming("tool.bow.homing", name("tool_bow_homing"), nextID()));
 	}
 }
